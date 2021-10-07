@@ -1,0 +1,59 @@
+baseURL = 'http://taoyuan.io/'
+languageCode = 'zh-cn'
+DefaultContentLanguage = "zh-cn"
+title = '桃源'
+theme = "anatole"
+summarylength = 70
+enableEmoji = true
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = ""
+
+# Google Analytics
+#googleAnalytics = "UA-123-45"
+
+# Syntax highlighting
+pygmentsUseClasses = true   
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+        unsafe=true
+        
+[params]
+title = "桃源"
+author = "桃源"
+description = "愿言蹑清风，高举寻吾契"
+profilePicture = "images/profile.png"
+bgPicture = "images/bg.jpg"
+contentratio = 0.75
+readMore = true
+favicon = "favicons/"
+doNotLoadAnimations = true
+
+[taxonomies]
+    category = "categories"
+    series = "series"
+    tag = "tags"
+
+[menu]
+
+  [[menu.main]]
+  name = "首页"
+  identifier = "home"
+  weight = 100
+  url = "/"
+
+  [[menu.main]]
+  name = "归档"
+  weight = 200
+  identifier = "posts"
+  url = "/posts/"
+
+  [[menu.main]]
+  name = "关于"
+  weight = 300
+  identifier = "about"
+  url = "/about/"
