@@ -1,0 +1,21 @@
+component: website # (必填) 引用 component 的名称，当前用到的是 tencent-website 组件
+name: website-SGQoDnf7K # (必填) 该 website 组件创建的实例名称
+app: taoyuan # (可选) 该 website 应用名称
+stage: prod # (可选) 用于区分环境信息，默认值是 dev
+
+inputs:
+  src:
+    src: ./public
+    index: index.html
+  region: ap-hongkong
+  bucketName: taoyuan-1257453762
+  protocol: https
+  hosts:
+    - host: taoyuan.io
+      autoRefresh: true #开启自动 CDN 刷新，用于快速更新和同步加速域名中展示的站点内容
+      onlyRefresh: false #建议首次部署后，将此参数配置为 true，即忽略其他 CDN 配置，只进行刷新操作
+      https:
+        switch: on
+        http2: on
+        certInfo:
+          certId: 'qRNxOLhR'
